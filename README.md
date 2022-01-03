@@ -14,6 +14,7 @@
   - reviews
     1. Requested the API using activity_id, set limit as 100.
     2. Uploaded to MongoDB (collection name = 'review').
+    ### Note: This part would be IP-banned if requesting too many times. Could use Scrapy instead to implement random IP scraping.
 
 - step 2:
 
