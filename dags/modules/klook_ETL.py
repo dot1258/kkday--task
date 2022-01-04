@@ -125,7 +125,7 @@ class klook_scraper():
     def transform_then_load(self) -> None:
         try:
             data = self.m.to_dataframe(db=self.db, collection='activity')
-            data = data[(data['review_star'] >= 4) & (data['updated_ts'] == self.updated_ts)]
+            data = data[(data['review_star'] < 4) & (data['updated_ts'] == self.updated_ts)]
             now = dt.datetime.now().strftime('%Y-%m-%d')
             data.to_csv(f'data_{now}.csv')
         except Exception as e:
