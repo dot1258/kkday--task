@@ -23,7 +23,7 @@
 
   - reviews
 
-    - - Schema:\
+    - Schema:\
         {\
          'activity_id': string,\
          'id': string,\
