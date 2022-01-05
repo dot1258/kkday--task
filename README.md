@@ -19,7 +19,7 @@
     2. Transform the data from json to dataframe, add datetime at now as 'update_ts' column for next step filtering.
     3. Uploaded to MonggoDB (collection name = 'activity').
 
-    **Note: MongoDB API config should be masked for database security.**
+    **Note: MongoDB API config should be masked for database security. (e.g., AWS Secret Manager.) **
 
   - reviews
 
